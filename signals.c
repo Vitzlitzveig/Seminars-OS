@@ -38,7 +38,7 @@ void dontStopMeHandler(int sig)
 
 void mode1()
 {
-	/* Нерекомендованный способ: такой вызов не блокирует прерывания во время обработки предыдущего
+	/* Такой вызов не блокирует прерывания во время обработки предыдущего
 	 * sighandler_t signal(int signum, sighandler_t handler);
 	 * signal(SIGINT, stopHandler);
 	 */
